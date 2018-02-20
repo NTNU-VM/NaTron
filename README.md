@@ -23,6 +23,7 @@ NaTron is a web driven geo-database application holding and managing ecological 
         <li>natron_get_mgrs. python procedural function converting geodesic coordinates as latitude and longitude decimal to the metric mgrs coordinates.</li>
         <li>natron_get_mgrs_from_utm. python procedural function converting utm coordinates to mgrs coordinates.</li>
         <li>natron_get_verbatim_coordinate_system. python procedural function determining the coordinate based on a well known gps format. supported format are mgrs, utm and geodesic.</li>
+        <li>median. PL/pgSQL functional aggregate that calculate the median.</li>
     </ul>
 
 <h2>Programming languages</h2>
