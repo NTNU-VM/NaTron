@@ -26,14 +26,14 @@ NaTron is a web driven geo-database application holding and managing ecological 
           <li>natron_get_verbatim_coordinate_system. python procedural function determining the coordinate based on a well known gps format. supported format are mgrs, utm and geodesic.</li>
           <li>median. PL/pgSQL functional aggregate that calculate the median.</li>
       </ul>
-  <h3>Application server:</h3> Windows server 2016 64-bit operating system  
+  <h3>Application server</h3> Windows server 2016 64-bit operating system  
       <ul>
           <li>IIS 10 https://technet.microsoft.com/en-us/library/hh831475(v=ws.11).aspx. Enables internet service.</li>
           <li>.NET 4.5 is provided width Windows 10 and Windows server 16. Enables HTML iteration and procedural function on client side.</li>
           <li>MSSQL 2016 express edition https://www.microsoft.com/en-us/download/details.aspx?id=54284. Enables and manage the ASPNET.mdf database user account.</li>
           <li>ODBC https://odbc.postgresql.org/. Enables database access on postgresql.</li>
           <li>Npgsql http://www.npgsql.org/doc/connection-string-parameters.html. Enables procedural SQL for postgresql database on a .NET 4.5 plattform.</li>
-          <li>Google map api https://developers.google.com/maps/. Enables mapping and simple geometry process on a web page.</li>
+          <li>Google map api https://developers.google.com/maps/. Enables client mapping and simple geometry process on a web page.</li>
       </ul>
 <h2>Programming languages</h2>
     <ul>
