@@ -1,5 +1,7 @@
 <h1>NaTron</h1>
 
+Please visit https://github.com/NTNU-VM/NaTron/wiki for a comprehensive description of both database and application.
+
 NaTron is a web driven geo-database application holding and managing ecological data collection for the Natural History museum of Trondheim at NTNU-VM. https://natron.vm.ntnu.no/datacollection/.
 
 <h2>Plattform and program installation</h2>
