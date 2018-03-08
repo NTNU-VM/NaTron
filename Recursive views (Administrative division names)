@@ -1,0 +1,23 @@
+-- View: public.recursive_administrative_view
+
+DROP VIEW if exists public.recursive_administrative_view;
+
+CREATE RECURSIVE VIEW recursive_administrative_view ("administrativeBoundaryID", "administrativeRank", "administrativeName", "administrativeNames") AS 
+    SELECT
+        "administrativeBoundaryID", "administrativeRank", "administrativeName",
+        case when "administrativeName" is null then '' else "administrativeName"::text end AS "administrativeNames"
+    FROM
+	    geo."AdministrativeBoundaries"
+    WHERE
+    	"parentID" = "administrativeBoundaryID"
+	UNION ALL
+        SELECT
+        a."administrativeBoundaryID", a."administrativeRank", a."administrativeName",
+        (
+        rl."administrativeNames" || ' | ' || case when a."administrativeName" is null then '' else a."administrativeName"::text end
+        ) AS "full_AdministrativeName"
+        FROM
+        geo."AdministrativeBoundaries" a
+	INNER JOIN recursive_administrative_view rl ON a."parentID" = rl."administrativeBoundaryID"
+        WHERE
+            a."parentID" <> a."administrativeBoundaryID";
