@@ -1,4 +1,4 @@
-This function converts meters to degree, it allows geographical distance analisys with postgis function running with 
+This function converts meters to degree, it allows geographical distance analisys with postgis functions running 
 geographical dataset having a geodesic projection.
 
 -- FUNCTION: data.natron_get_degree_distance(double precision)
