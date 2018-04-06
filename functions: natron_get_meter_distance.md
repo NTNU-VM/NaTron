@@ -1,6 +1,7 @@
 This function converts degree to meter, it allows geographical distance analisys with postgis functions running 
 geographical dataset having a metric projection.
 
+```sql
 -- FUNCTION: data.natron_get_meter_distance(double precision)
 
 -- DROP FUNCTION data.natron_get_meter_distance(double precision);
@@ -18,3 +19,5 @@ AS $BODY$
     SELECT (($1 * 6378137) * pi()) / 180
 
 $BODY$;
+
+```
